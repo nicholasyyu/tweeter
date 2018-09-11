@@ -18,8 +18,37 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+main {
+  width: 450px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background: white;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+form {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.2em;
+}
+
+main section form input {
+  float: left;
+}
