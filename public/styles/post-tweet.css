@@ -1,0 +1,66 @@
+#posted-tweet {
+  background: #CFCFCF;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+#posted-tweet:hover .tweet-header{opacity: 1;}
+#posted-tweet:hover .tweet-footer .like{display: block;}
+#posted-tweet:hover .tweet-footer .retweet{display: block;}
+#posted-tweet:hover .tweet-footer .flag{display: block;}
+
+.tweet-header {
+  background: #EDEDED;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0.6;
+}
+#posted-tweet .userlogo {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#posted-tweet .user {
+  float: left;
+  margin-top: 10px;
+}
+
+#posted-tweet .userid {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.tweet-content-box {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+
+.tweet-footer {
+  padding-left: 10px;
+  border-top: 1px solid black;
+}
+
+.tweet-footer .like {
+  float: right;
+  display: none;
+}
+
+
+.tweet-footer .retweet {
+  float: right;
+  display: none;
+}
+
+
+.tweet-footer .flag {
+  float: right;
+  display: none;
+}
+

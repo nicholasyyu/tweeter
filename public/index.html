@@ -14,13 +14,18 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/post-tweet.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
 
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+
   </head>
 
   <body>
@@ -34,11 +39,62 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
-          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <textarea class="tweetarea" name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
+
+      <section id="posted-tweet">
+
+        <article class="tweets">
+
+          <header class="tweet-header">
+            <img class="userlogo" src="/images/bird.png" height="50px" width="50px">
+            <span class="user">Yang</span>
+            <span class="userid">@Yang</span>
+          </header>
+
+          <div class="tweet-content-box">
+            <span class="tweet-content">yiuysiudyiuaysudyaiusydiuaysdiuyasiuydiasydiausydiaysid</span>
+          </div>
+
+          <footer class="tweet-footer">
+            <span>date:2018</span>
+            <img class="flag" src="/images/bird.png" height="15px" width="15px">
+            <img class="retweet" src="/images/bird.png" height="15px" width="15px">
+            <img class="like" src="/images/bird.png" height="15px" width="15px">
+          </footer>
+
+        </article>
+
+      </section>
+
+      <section id="posted-tweet">
+
+        <article class="tweets">
+
+          <header class="tweet-header">
+            <img class="userlogo" src="/images/bird.png" height="50px" width="50px">
+            <span class="user">Yang</span>
+            <span class="userid">@Yang</span>
+          </header>
+
+          <div class="tweet-content-box">
+            <span class="tweet-content">yiuysiudyiuaysudyaiusydiuaysdiuyasiuydiasydiausydiaysid</span>
+          </div>
+
+          <footer class="tweet-footer">
+            <span>date:2018</span>
+            <img class="flag" src="/images/bird.png" height="15px" width="15px">
+            <img class="retweet" src="/images/bird.png" height="15px" width="15px">
+            <img class="like" src="/images/bird.png" height="15px" width="15px">
+          </footer>
+
+        </article>
+
+      </section>
+
     </main>
   </body>
 </html>
