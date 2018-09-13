@@ -1,16 +1,12 @@
-#posted-tweet {
+.posted-tweet {
   background: #CFCFCF;
-  height: 200px;
+  height: auto;
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   border-radius: 15px;
 }
-#posted-tweet:hover .tweet-header{opacity: 1;}
-#posted-tweet:hover .tweet-footer .like{display: block;}
-#posted-tweet:hover .tweet-footer .retweet{display: block;}
-#posted-tweet:hover .tweet-footer .flag{display: block;}
 
 .tweet-header {
   background: #EDEDED;
@@ -19,18 +15,18 @@
   border-top-right-radius: 15px;
   opacity: 0.6;
 }
-#posted-tweet .userlogo {
+.posted-tweet .userlogo {
   float: left;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-#posted-tweet .user {
+.posted-tweet .user {
   float: left;
   margin-top: 10px;
 }
 
-#posted-tweet .userid {
+.posted-tweet .userid {
   float: right;
   margin-top: 10px;
   margin-right: 10px;
@@ -64,3 +60,17 @@
   display: none;
 }
 
+.posted-tweet:hover .tweet-header {opacity: 1;}
+.posted-tweet:hover .tweet-footer .like {display: block;}
+.posted-tweet:hover .tweet-footer .retweet {display: block;}
+.posted-tweet:hover .tweet-footer .flag {display: block;}
+
+.posted-tweet-container {
+  background: #CFCFCF;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+}

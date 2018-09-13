@@ -15,15 +15,6 @@ $(document).ready(function() {
       $(this).css('color', 'black');
     }
   });
-  /*
-  $("#posted-tweet").mouseenter(function() {
-    console.log('123');
-    $( this ).fadeTo( "fast", 0.33 );
-  });
-  $("#posted-tweet").mouseout(function() {
-    $( this ).fadeTo( "fast", 1 );
-  });
-  */
 
 });
 
