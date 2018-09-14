@@ -7,30 +7,40 @@
 $(document).ready(function() {
   //console.log('trigger');
   // Test / driver code (temporary). Eventually will get this from the server.
-  $(function() {
-    var $button = $('input');
-    $button.on('click', function (event) {
-      event.preventDefault();
-      console.log('Button clicked, performing ajax call appJS');
-      let $formdata = $( 'form' ).serialize();
-      //const safeHTML = `<p>${escape(textFromUser)}</p>`;
-      if($formdata.length > 5){
-        $.ajax('/tweets', {method: 'POST' , data: $formdata})
-        .then(function (tweet) {
-          console.log('Success: ', tweet);
-          let $tweet = createTweetElement(tweet);
-          $('#posted-tweet-container').prepend($tweet);
-        });
-      } else if ($formdata.length === 5) {
-        alert("Your cannot send empty content.");
-      }
-    });
+  var composeButton = $('.composeButton');
+  composeButton.on('click', function(){
+    console.log('Compose Button clicked');
+    $(".new-tweet").slideToggle()
+    $("textarea").focus().click();
+  })
+  var $button = $('input');
+  $button.on('click', function (event) {
+    event.preventDefault();
+    console.log('Button clicked, performing ajax call appJS');
+
+    const unsafeHTML = $('.tweetarea').val();
+    $('.tweetarea').val(escape(unsafeHTML));
+
+    let $formdata = $( 'form' ).serialize();
+
+    if($formdata.length > 5 && $formdata.length < 145){
+      $.ajax('/tweets', {method: 'POST' , data: $formdata})
+      .then(function (tweet) {
+        console.log('Success: ', tweet);
+        let $tweet = createTweetElement(tweet);
+        $('#posted-tweet-container').prepend($tweet);
+        $('.tweetarea').val('');
+      });
+    } else if ($formdata.length === 5) {
+      //alert("Your cannot send empty content.");
+      $(".error").css("display", "block");
+    }
   });
 
   function escape(str) {
-  var div = document.createElement('div');
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
   }
 
   function createTweetElement(tweet) {

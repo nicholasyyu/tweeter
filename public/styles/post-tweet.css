@@ -36,6 +36,11 @@
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 100px;
+  width: auto;
+}
+
+.tweet-content {
+  word-wrap: break-word;
 }
 
 .tweet-footer {

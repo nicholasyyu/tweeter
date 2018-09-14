@@ -10,11 +10,11 @@ $(document).ready(function() {
     $(".counter").text(remainLength);
     if(remainLength <= 0){
       $(this).css('color', 'red');
-      alert("Your text exceed allowance.");
+      //alert("Your text exceed allowance.");
+      $(".error").css("display", "block");
     } else {
       $(this).css('color', 'black');
     }
   });
-
 });
 
