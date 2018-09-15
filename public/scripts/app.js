@@ -10,7 +10,7 @@ $(document).ready(function() {
   var composeButton = $('.composeButton');
   composeButton.on('click', function(){
     console.log('Compose Button clicked');
-    $(".new-tweet").slideToggle()
+    $(".new-tweet").slideToggle(150);
     $("textarea").focus().click();
   })
   var $button = $('input');
@@ -53,16 +53,19 @@ $(document).ready(function() {
     let $divContent = $(`<span class='tweet-content'>${tweet.content.text}</span>`);
     let $div = $("<div class='tweet-content-box'></div>").append($divContent);
 
-    let date = new Date(tweet.created_at*1000);
-    let hours = date.getHours();
-    let minutes = "0" + date.getMinutes();
-    let seconds = "0" + date.getSeconds();
-    let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+    let dateCreate = new Date(tweet.created_at);
+    let year = dateCreate.getFullYear();
+    let month = dateCreate.getMonth() + 1;
+    let date = dateCreate.getDate();
+    let hours = dateCreate.getHours();
+    let minutes = "0" + dateCreate.getMinutes();
+    let seconds = "0" + dateCreate.getSeconds();
+    let formattedTime = year + '-' + month + '-' + date + ' ' + hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
     let $footerDate = $(`<span>${formattedTime}</span>`);
-    let $footerFlag = $("<img class='flag' src='/images/bird.png' height='20px' width='20px'>");
-    let $footerRetweet = $("<img class='retweet' src='/images/bird.png' height='20px' width='20px'>");
-    let $footerLike = $("<img class='like' src='/images/bird.png' height='20px' width='20px'>");
+    let $footerFlag = $("<img class='flag' src='/images/flag.png' height='15px' width='15px'>");
+    let $footerRetweet = $("<img class='retweet' src='/images/retweet.png' height='15px' width='15px'>");
+    let $footerLike = $("<img class='like' src='/images/like.png' height='15px' width='15px'>");
     let $footer = $("<footer class='tweet-footer'></footer>").append($footerDate, $footerFlag, $footerRetweet, $footerLike);
 
     let $tweet = $("<section class='posted-tweet'></section>").append("<article class='tweets'></article>").append($header, $div, $footer);
