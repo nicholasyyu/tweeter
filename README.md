@@ -13,7 +13,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["screenshot description"](https://github.com/nicholasyyu/TinyApp/blob/master/docs/home.png?raw=true)
+!["screenshot description"](https://github.com/nicholasyyu/tweeter/blob/master/docs/tweeter1.png?raw=true)
 
 ## Dependencies
 
