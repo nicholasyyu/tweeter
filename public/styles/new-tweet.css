@@ -1,5 +1,5 @@
 .container .new-tweet {
-  background: #CFCFCF;
+  background: #D1494E;
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -9,6 +9,8 @@
 }
 
 .counter {
+  color: white;
+  font-weight: bold;
   float: right;
   line-height: 24px;
 }
@@ -34,4 +36,11 @@
 
 .closebtn:hover {
     color: black;
+}
+
+.submit {
+  color: white;
+  font-weight: bold;
+  background: #585E5C;
+  border-radius: 5px;
 }

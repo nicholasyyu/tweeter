@@ -3,7 +3,7 @@
   position: fixed;
   height: 80px;
   width: 100%;
-  background: #00a087;
+  background: #144659;
   padding-right: 2em;
   padding-left: 2em;
   z-index: 1;
@@ -13,6 +13,7 @@
   display: inline-block;
   color: #e8fdff;
   font-size: 20pt;
+  font-weight: bold;
   line-height: 80px;
 
 }
@@ -25,12 +26,15 @@
 
 #nav-bar .composeButton{
   float: right;
-  background: #CFCFCF;
-  border-radius: 10px;
+  background: #585E5C;
+  border-radius: 5px;
   width: 100px;
   display: inline-block;
-  line-height: 50px;
-  margin-top: 12px;
+  line-height: 30px;
+  margin-top: 22px;
+  color: white;
+  font-weight: bold;
+  font-size: 14pt;
 }
 
 
