@@ -11,10 +11,10 @@ This repository is the starter code for the project: Students will fork and clon
 	> mongo
 2. Try show dbs to list the available databases:
 	> show dbs
-3. > use tweeter //switched to db tweeter
-4. > db.test.insert({"message":"hello world"}) //WriteResult({ "nInserted" : 1 })
-5. > show dbs //show all database
-6. > db.test.find() //print your "test" collection
+3. > use tweeter;		switched to db tweeter
+4. > db.test.insert({"message":"hello world"});		WriteResult({ "nInserted" : 1 })
+5. > show dbs;		show all database
+6. > db.test.find();		print your "test" collection
 7. > var tweets = [
 					  {
 					    "user": {
@@ -61,8 +61,8 @@ This repository is the starter code for the project: Students will fork and clon
 					    "created_at": 1461113796368
 					  }
 					]
-8. db.tweets.insert(tweets) //insert var tweets into collection tweets
-9. db.tweets.find() //print tweets collection
+8. db.tweets.insert(tweets);		insert var tweets into collection tweets
+9. db.tweets.find();		print tweets collection
 
 ### Start your local server
 1. Fork this repository, then clone your fork of this repository.
