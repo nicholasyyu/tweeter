@@ -2,7 +2,7 @@ $(document).ready(function() {
   // --- our code goes here ---
   console.log('HTML ready.');
 
-  $(".tweetarea").keyup(function() {
+  $(".tweetarea").on('input',function() {
 
     var text = $( this ).val();
     var length = text.length;

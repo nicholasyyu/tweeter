@@ -63,9 +63,9 @@ $(document).ready(function() {
     let formattedTime = year + '-' + month + '-' + date + ' ' + hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
     let $footerDate = $(`<span>${formattedTime}</span>`);
-    let $footerFlag = $("<img class='flag' src='/images/flag.png' height='15px' width='15px'>");
-    let $footerRetweet = $("<img class='retweet' src='/images/retweet.png' height='15px' width='15px'>");
-    let $footerLike = $("<img class='like' src='/images/like.png' height='15px' width='15px'>");
+    let $footerFlag = $('<i id=flag class="fas fa-flag"></i>');
+    let $footerRetweet = $('<i id=retweet class="fas fa-retweet"></i>');
+    let $footerLike = $('<i id=like class="fas fa-heart"></i>');
     let $footer = $("<footer class='tweet-footer'></footer>").append($footerDate, $footerFlag, $footerRetweet, $footerLike);
 
     let $tweet = $("<section class='posted-tweet'></section>").append("<article class='tweets'></article>").append($header, $div, $footer);

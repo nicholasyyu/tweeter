@@ -6,6 +6,7 @@
   margin-left: 20px;
   border-radius: 15px;
   padding-bottom: 10px;
+  display: none;
 }
 
 .counter {

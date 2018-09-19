@@ -17,8 +17,8 @@
 }
 .posted-tweet .userlogo {
   float: left;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding: 5px;
+  border-radius: 15px;
 }
 
 .posted-tweet .user {
@@ -37,6 +37,7 @@
   margin-left: 10px;
   margin-bottom: 100px;
   width: auto;
+  padding-top: 25px;
 }
 
 .tweet-content {
@@ -48,27 +49,30 @@
   border-top: 2px solid #eee;;
 }
 
-.tweet-footer .like {
+.tweet-footer #like {
   float: right;
   display: none;
+  margin-right: 10px;
 }
 
 
-.tweet-footer .retweet {
+.tweet-footer #retweet {
   float: right;
   display: none;
+  margin-right: 10px;
 }
 
 
-.tweet-footer .flag {
+.tweet-footer #flag {
   float: right;
   display: none;
+  margin-right: 10px;
 }
 
 .posted-tweet:hover .tweet-header {opacity: 1;}
-.posted-tweet:hover .tweet-footer .like {display: block;}
-.posted-tweet:hover .tweet-footer .retweet {display: block;}
-.posted-tweet:hover .tweet-footer .flag {display: block;}
+.posted-tweet:hover .tweet-footer #flag {display: block;}
+.posted-tweet:hover .tweet-footer #retweet {display: block;}
+.posted-tweet:hover .tweet-footer #like {display: block;}
 
 .posted-tweet-container {
   background: #CFCFCF;
