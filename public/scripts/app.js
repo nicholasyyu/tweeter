@@ -91,9 +91,5 @@ $(document).ready(function() {
     });
   }
   loadTweets();
-  //var $tweet = createTweetElement(tweetData);
-  //renderTweets(data);
-  // Test / driver code (temporary)
-  //console.log($tweet); // to see what it looks like
-  //$('main').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+
 });
