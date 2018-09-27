@@ -21,7 +21,7 @@ $(document).ready(function() {
     const unsafeHTML = $('.tweetarea').val();
     $('.tweetarea').val(escape(unsafeHTML));
 
-    let $formdata = $( 'form' ).serialize();
+    let $formdata = $( '.tweetarea' ).serialize();
 
     if($formdata.length > 5 && $formdata.length < 145){
       $.ajax('/tweets', {method: 'POST' , data: $formdata})
